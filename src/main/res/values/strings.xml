@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Diatonic</string>
+    <string name="key_prompt">Select a key</string>
+    <string-array name="key_names">
+        <item>Choose a key</item>
+        <item>C major</item>
+        <item>G major</item>
+        <item>D major</item>
+        <item>A major</item>
+        <item>E major</item>
+        <item>B major</item>
+        <item>F#/Gb major</item>
+        <item>C#/Db major</item>
+        <item>Ab major</item>
+        <item>Eb major</item>
+        <item>Bb major</item>
+        <item>F major</item>
+    </string-array>
+    <string-array name="scale_degrees">
+        <item>Do</item>
+        <item>Re</item>
+        <item>Mi</item>
+        <item>Fa</item>
+        <item>Sol</item>
+        <item>La</item>
+        <item>Ti</item>
+    </string-array>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect, try again.</string>
+    <string name="submit">Submit</string>
+</resources>

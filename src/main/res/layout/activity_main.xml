@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mchen110.diatonic.MainActivity">
+
+    <Spinner
+        android:id="@+id/key_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/key_names"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Play me a chord"
+        android:layout_below="@+id/key_dropdown"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/guess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/guess_prompt"
+        android:layout_margin="8dp"
+        android:entries="@array/scale_degrees" />
+
+    <TextView
+        android:id="@+id/guess_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="Which scale degree was played?" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/guess"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
